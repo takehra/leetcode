@@ -33,7 +33,8 @@ class Test_ExceptionCases(unittest.TestCase):
         {"nums": [-1-10**9, 7, 11, 15], "target": 9},
         {"nums": [1+10**9, 7, 11, 15], "target": 9},
         {"nums": [2, 7, 11, 15], "target": -1-10**9},
-        {"nums": [2, 7, 11, 15], "target": 1+10**9}
+        {"nums": [2, 7, 11, 15], "target": 1+10**9},
+        {"nums": "[2, 7, 11, 15]", "target": 9}
     ]
 
     def setUp(self):

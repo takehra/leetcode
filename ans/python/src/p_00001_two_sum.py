@@ -74,9 +74,9 @@ class Solution:
             return False
         else:
             for num in nums:
-                if num <= -10**9 or num >= 10**9:
+                if num < -10**9 or num > 10**9:
                     return False
-            if target <= -10**9 or target >= 10**9:
+            if target < -10**9 or target > 10**9:
                 return False
             else:
                 return True
